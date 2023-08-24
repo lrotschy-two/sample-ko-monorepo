@@ -1,6 +1,7 @@
 name: reusable policy conformance
 on:
-  workflow_call: {}
+  # workflow_call: {}
+  workflow_dispatch:
 jobs:
   conform:
     runs-on: ubuntu-latest
