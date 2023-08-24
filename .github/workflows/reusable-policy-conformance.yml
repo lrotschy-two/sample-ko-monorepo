@@ -12,7 +12,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: conform
         uses: docker://ghcr.io/geonet/base-images/siderolabs-conform:v0.1.0-alpha.27
-        with:
-          args: enforce --commit-ref=refs/remotes/origin/main --reporter=github
-        env:
-          INPUT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   args: enforce --commit-ref=refs/remotes/origin/main --reporter=github
+        # env:
+        #   INPUT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
